@@ -8,9 +8,11 @@
 from azure.quantum import Workspace
 
 # Copy the settings for your workspace below
-workspace = Workspace(
-    resource_id = "", # add the Resource ID of your Azure Quantum workspace
-    location = ""     # add the location of your Azure Quantum workspace (e.g. "westus")
+workspace = Workspace (
+  subscription_id = "81fe176a-bfcc-47f6-b21f-865f1acd12c3",
+  resource_group = "test",
+  name = "test0",
+  location = "eastus"
 )
 
 # Take an array of container weights and return a Problem object that represents the cost function
